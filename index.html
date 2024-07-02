@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas de Verdadeiro ou Falso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perguntas de Verdadeiro ou Falso</h1>
+        <div id="question-container">
+            <p id="question-text">Esta é a primeira pergunta?</p>
+            <div class="button-container">
+                <button onclick="checkAnswer(true)">Verdadeiro</button>
+                <button onclick="checkAnswer(false)">Falso</button>
+            </div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <p id="result-text">Você acertou X de Y perguntas.</p>
+            <button onclick="restartQuiz()">Recomeçar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
